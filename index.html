@@ -10,7 +10,8 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
+      />
+      <script src = "script.js" defer></script>
     <title>restaurant menu</title>
   </head>
   <body>
@@ -91,10 +92,10 @@
 
     <div class="container"  class="page">
         <ul class="subtitle">
-          <li><p class = "title">APPETIZERS</p></li>
-          <li><p ><a href="#" class = "classification">veg</a>  <a href = "#" class = "classification">    non-veg</a></p></li>
+          <li><p class = "title"><a href="#" onclick="displayNormal()">APPETIZERS</a></p></li>
+          <li><p ><a href="#" class = "classification" onclick="hideNonVeg()">veg</a>  <a href = "#" class = "classification" onclick="hideVeg()">    non-veg</a></p></li>
         </ul>   
-      <div class="items">
+      <div class="items" id = "veg">
         <div class="align">
           <div class = "subitems">
             <div class="image">
@@ -148,7 +149,7 @@
           </div>
         </div>  
       </div>
-      <div class="items">
+      <div class="items" id = "non-veg">
         <div class="align">
           <div class = "subitems">
             <div class="image">
