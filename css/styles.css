@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Nunito:wght@300&family=Poppins:wght@300&display=swap');
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital@0;1&family=Playpen+Sans:wght@200&display=swap');
 
+
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
@@ -13,7 +19,7 @@
 }
 
 nav{
-    display: flex;
+    display: flex; 
     padding:20px;
     background: #edede9;
     font: 14px;
@@ -69,9 +75,13 @@ input{
     display: flex;
 }
 
-.material-icons.md-16 {
-    font-size : 15px;
+.material-icons.md-12 {
+    font-size : 12px;
 }
+
+/* element.style {
+    height: 50px;
+} */
 
 #login{
     background: olivedrab;
@@ -105,11 +115,12 @@ input{
     margin:0;
 }
 
-.logo:hover{
+.logo:hover, a.logoname:hover{
     background: olivedrab;
     opacity: 20;
     padding:3px;
-    border-radius: 4px;;
+    border-radius: 4px;
+    color:#fff;
 }
 
 #sticky{
@@ -129,12 +140,20 @@ input{
     width: 100%;
 }
 
+body{
+    background-color: #e1e8d3;
+}
+
+.page{
+    display:block;
+}
 .home{
     background: url(../images/home.jpg);
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
     padding-top: 20vh;
+    
 }
 
 .text{
@@ -166,25 +185,129 @@ input{
     /* position: relative; */
     border : none;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height:50vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
 }
 
 .menu-items{
-    display: block;
-    padding:30px;
-    height: 350px;
-    width: 350px;
-    border: 2px solid olivedrab  
+    /* display: block; */
+    padding:5vh;
+    height: 300px;
+    width: 250px;
+    /* border: 2px solid olivedrab;  */
+    margin: 10vh 0vh; 
 }
 
 .menu-items img{
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
-    border-radius: 30vh;
+    border-radius: 30vh; 
+    box-shadow: 0px 0px 1vh olivedrab;   
 }
 
+.details{
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:black;
+    display:flex
+
+}
+
+.menu-items:hover{
+    /* background:#a6bb7b; */
+    border-radius: 3vh;
+    box-shadow: 0px 0px 10px #a6bb7b;;
+    
+    cursor:pointer;
+    color:#fff;
+    font-weight: 300;
+    transition: 0.2s;
+    
+}
+
+.title{
+    padding:7vh;
+    font-size: 3.5vh;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 2vh;
+    color: black;
+    text-transform: uppercase;
+    
+}
+
+.container{
+    height: 90vh;
+    background-color: #e1e8d3;
+    border-bottom: 1px solid olivedrab;
+}
+
+/* .appetizers{
+    height:90vh;
+    background: #fff;
+} */
+/* 
+.title{
+    font-size: 3.5vh;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2vh;
+    display:block;
+} */
+
+.subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.classification{
+    font-size: 2.5vh;
+    text-transform: uppercase;
+    letter-spacing: 1.5vh;
+    padding:2vh
+}
+
+a.classification:hover{
+    border-bottom: 3px solid #88a44e;
+    padding-bottom: 1vh;
+    border-radius: 2px;
+}
+
+.items{
+    display: block;
+    border : none;
+    align-items: center;
+    /* height:100vh; */
+    /* padding-left: 15vh;
+    padding-right: 15vh; */
+}
+
+.start{
+    padding:2vh;
+    overflow-x: hidden;
+    height: 30vh;
+    width: 40vh;
+    /* margin: 10vh 0vh;  */
+}
+.start img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2vh; 
+}
+
+.subitems{
+    align-items: center;
+    justify-content: space-around;
+    display:flex;
+}
 
 
 
