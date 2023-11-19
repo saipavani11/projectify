@@ -121,6 +121,8 @@ input{
     padding:3px;
     border-radius: 4px;
     color:#fff;
+    transition: 0.5s;
+
 }
 
 #sticky{
@@ -229,6 +231,7 @@ body{
     color:#fff;
     font-weight: 300;
     transition: 0.2s;
+    transition: 0.3s;
     
 }
 
@@ -253,36 +256,11 @@ section{
     border-bottom: 1px solid olivedrab;
 }
 
-/* .appetizers{
-    height:90vh;
-    background: #fff;
-} */
-/* 
-.title{
-    font-size: 3.5vh;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2vh;
-    display:block;
-} */
-
 .subtitle{
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.classification1, .classification2{
-    font-size: 2.5vh;
-    text-transform: uppercase;
-    letter-spacing: 1.5vh;
-    padding:2vh
-}
-
-a.classification:hover{
-    border-bottom: 3px solid #88a44e;
-    padding-bottom: 1vh;
-    border-radius: 2px;
+    position: relative;
 }
 
 .items{
@@ -358,6 +336,120 @@ a.classification:hover{
     color:#88a44e;
     border:1px solid #88a44e;
     font-weight: 800;
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+.para{
+    text-align: center;
+    margin:1vh 13vh 8vh 13vh;
+}
+
+.about{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.laras{
+    width:450px;
+    height:300px;    
+}
+
+.laras img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.help{
+    display:flex;
+    justify-content: space-evenly;
+    margin:0vh 25vh 0vh 25vh;
+    padding:2vh;
+}
+
+.info{
+    border:2px solid #88a44e;
+    padding:5vh;
+}
+
+.info p{
+    text-transform: capitalize;
+    margin-bottom: 2.5vh;
+    color:olivedrab;
+    font-weight: 500;
+}
+
+.info input{
+    margin-top: 1.5vh;
+    width:50vh;
+    height:6vh;
+    border:1px solid olivedrab;
+    overflow: hidden;
+}
+
+#message{
+    height:13vh;
+}
+
+.infohead{
+    font-size: 4vh;
+    margin:0.5vh;
+    border-bottom: 1px solid olivedrab;
+    letter-spacing: 1vh;
+    color:olivedrab;
+    text-transform: capitalize;
+}
+
+.info-details{
+    display:block;
+    margin:1.5vh 0vh 1.5vh 0vh;
+    padding:2vh;
+    font-size: 2.5vh;
+    letter-spacing: 0.5vh;
+}
+
+#para{
+    text-align: left;
+    font-weight: 500;
+}
+
+.button{
+    background:#88a44e;
+    color:#fff;
+    letter-spacing: 0.5vh;
+    border:none;
+    padding:1vh 0.5vh;
+    border-radius:1vh;
+    /* text-transform: capitalize; */
+    font-size: 2.5vh;
+}
+
+
+.button:hover{
+    background:#e1e8d3;
+    color:#88a44e;
+    border:1px solid #88a44e;
+    font-weight: 800;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+    box-shadow: 0px 0px 5px olivedrab;
+    margin-top:2vh
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
 
