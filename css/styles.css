@@ -452,7 +452,43 @@ section{
     position: absolute;
 }
 
+footer{
+    padding: 1vh 5vh 1vh 5vh;
+    background:olivedrab;
+}
 
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    font-size: 22px;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.icons{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30vh;
+}
+
+.icons img{
+    width:4vh;
+    height:4vh;
+}
+
+.icons:hover{
+    cursor: pointer;
+}
+
+footer p{
+    font:12px;
+    text-align: center;
+}
     
 
 
