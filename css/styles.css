@@ -108,7 +108,7 @@ input{
     border-radius: 60px;
 }
 
-.hover:hover{
+.hover:hover, .hover.active{
     border: 0.5px solid olivedrab;
     border-radius: 5px;
     padding:0;
@@ -243,8 +243,12 @@ body{
     
 }
 
+section{
+    height:100vh;
+}
+
 .container{
-    height: 88vh;
+    /* height: 88vh; */
     background-color: #e1e8d3;
     border-bottom: 1px solid olivedrab;
 }
@@ -268,7 +272,7 @@ body{
     justify-content: space-around;
 }
 
-.classification{
+.classification1, .classification2{
     font-size: 2.5vh;
     text-transform: uppercase;
     letter-spacing: 1.5vh;
@@ -289,6 +293,8 @@ a.classification:hover{
     margin:3vh;
 }
 
+
+/* change to display:black; */
 .align{
     display:block;
 }
@@ -335,7 +341,24 @@ a.classification:hover{
     cursor:pointer;
 }
 
+.classification{
+    background:#88a44e;
+    color:#fff;
+    letter-spacing: 0.8vh;
+    border:none;
+    padding:3vh 2vh;
+    border-radius:1vh;
+    /* text-transform: capitalize; */
+    font-size: 2vh;
+}
 
+
+.classification:hover{
+    background:#e1e8d3;
+    color:#88a44e;
+    border:1px solid #88a44e;
+    font-weight: 800;
+}
 
 
     

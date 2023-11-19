@@ -17,7 +17,7 @@
   <body>
     <header class="header">
       <nav class="header-nav" id="navbar">
-        <div class="logo">
+        <div class="logo" >
           <a href="#"
             class = "logoname"><i class="material-icons">restaurant</i>Lara's Restaurant</a
           >
@@ -25,13 +25,13 @@
         <div class="nav-contents">
           <ul class="nav-items">
             <li class="hover">
-              <a href="#" class="nav-link">About Us</a>
+              <a href="#" class="nav-link" id="About Us">About Us</a>
             </li>
             <li class="hover">
-              <a href="#" class="nav-link">Menu</a>
+              <a href="#" class="nav-link" >Menu</a>
             </li>
             <li class="hover">
-              <a href="#" class="nav-link">Help</a>
+              <a href="#" class="nav-link" >Help</a>
             </li>
             <li>
               <a href="#" class="nav-link"
@@ -55,12 +55,12 @@
       </nav>
     </header>
     
-    <div class="home" class="page">
+    <section class="home" id="logo" class="page">
       <p class="text" id="name">lara's restaurant</p>
       <p class="text" id="tag">Where every flavour tells a story.</p>
-    </div>
+    </section>
 
-    <div class="container"  class="page">
+    <section class="container" id="Menu" class="page">
       <p class = "title">our categories</p>
       <div class="menu-list">
         <div class="menu-items" id="appetizers">
@@ -88,14 +88,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container"  class="page">
-        <ul class="subtitle">
-          <li><p class = "title"><a href="#" onclick="displayNormal()">APPETIZERS</a></p></li>
-          <li><p ><a href="#" class = "classification" onclick="hideNonVeg()">veg</a>  <a href = "#" class = "classification" onclick="hideVeg()">    non-veg</a></p></li>
-        </ul>   
-      <div class="items" id = "veg">
+    <section class="container" class="page">
+      <ul class="subtitle">
+        <li><p class = "title"><a href="#">APPETIZERS</a></p></li>
+        <li><p ><button class = "classification" onclick="displayVegs(this)">Go To Non-Veg</button></p></li>
+      </ul>    
+      <div class="items" id = "vegs">
         <div class="align">
           <div class = "subitems">
             <div class="image">
@@ -149,7 +149,7 @@
           </div>
         </div>  
       </div>
-      <div class="items" id = "non-veg">
+      <div class="items" id = "non-vegs">
         <div class="align">
           <div class = "subitems">
             <div class="image">
@@ -203,6 +203,242 @@
           </div>
         </div>  
       </div>
+    </section>
+    
+    
+    <section class="container"  class="page">
+      <ul class="subtitle">
+        <li><p class = "title"><a href="#">main course</a></p></li>
+        <li><p ><button class = "classification" onclick="displayVeg(this)">Go To Non-Veg</button></p></li>
+      </ul>   
+    <div class="items" id="veg">
+      <div class="align">
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/paneer biryani.jpg">
+          </div>            
+          <div class="details1">
+            <h7>paneer biryani<br>Rs.256</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/mushroom biryani.webp">
+          </div>
+          <div class="details1">
+            <h7>mushroom biryani<br>Rs.230</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/rajma chawal.jpg">
+          </div>
+          <div class="details1">
+            <h7>rajma chawal<br>Rs.75</h7>
+          </div>
+        </div>
+      </div>
+      <div class="align">
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/masala dosa.jpg">
+          </div>
+          <div class="details1">
+            <h7>masala dosa<br>Rs.50</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/palak paneer.jpg">
+          </div>
+          <div class="details1">
+            <h7>palak paneer<br>Rs.120</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/veg pulao.jpg">
+          </div>
+          <div class="details1">
+            <h7>veg pulao<br>Rs.70</h7>
+          </div>
+        </div>
+      </div>  
     </div>
+    <div class="items" id="non-veg">
+      <div class="align">
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/chicken biryani.avif">
+          </div>            
+          <div class="details1">
+            <h7>chicken biryani<br>Rs.280</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/tandoori chicken.webp">
+          </div>
+          <div class="details1">
+            <h7>tandoori chicken<br>Rs.210</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/mutton korma.jpg">
+          </div>
+          <div class="details1">
+            <h7>mutton korma<br>Rs.240</h7>
+          </div>
+        </div>
+      </div>
+      <div class="align">
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/malabar fish biryani.webp">
+          </div>
+          <div class="details1">
+            <h7>malabar fish biryani<br>Rs.270</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/goan prawn curry.jpg">
+          </div>
+          <div class="details1">
+            <h7>goan prawn curry<br>Rs.285</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/butter chicken.webp">
+          </div>
+          <div class="details1">
+            <h7>butter chicken<br>Rs.170</h7>
+          </div>
+        </div>
+      </div>  
+    </div>
+    </section>
+
+    <section class="container"  class="page">
+      <ul class="subtitle">
+        <li><p class = "title"><a href="#" onclick="displayNormal()">desserts</a></p></li>
+      </ul>   
+    <div class="items">
+      <div class="align">
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/chocolate mousse.jpg">
+          </div>            
+          <div class="details1">
+            <h7>chocolate mousse<br>Rs.120</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/tiramisu.webp">
+          </div>
+          <div class="details1">
+            <h7>tiramisu<br>Rs.120</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/blueberry cheesecake cup.webp">
+          </div>
+          <div class="details1">
+            <h7>blueberry cheesecake cup<br>Rs.120</h7>
+          </div>
+        </div>
+      </div>
+      <div class="align">
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/kitkat mousse.png">
+          </div>
+          <div class="details1">
+            <h7>kitkat mousse<br>Rs.130</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/chocolate brownie.jpg">
+          </div>
+          <div class="details1">
+            <h7>chocolate brownie<br>Rs.90</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/fruit tart.jpg">
+          </div>
+          <div class="details1">
+            <h7>fruit tart<br>Rs.60</h7>
+          </div>
+        </div>
+      </div>  
+    </div>
+    </section>
+  
+    <section class="container"  class="page">
+      <ul class="subtitle">
+        <li><p class = "title"><a href="#" onclick="displayNormal()">beverages</a></p></li>
+      </ul>   
+    <div class="items">
+      <div class="align">
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/butterscotch milk shake.webp">
+          </div>            
+          <div class="details1">
+            <h7>butterscotch milkshake<br>Rs.60</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/chocolate strawberry milkshake.webp">
+          </div>
+          <div class="details1">
+            <h7>chocolate strawberry milkshake<br>Rs.70</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/oreo milkshake.jpg">
+          </div>
+          <div class="details1">
+            <h7>oreo milkshake<br>Rs.45</h7>
+          </div>
+        </div>
+      </div>
+      <div class="align">
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/banana milkshake.jpg">
+          </div>
+          <div class="details1">
+            <h7>banana milkshake<br>Rs.40</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/watermelon juice.jpg">
+          </div>
+          <div class="details1">
+            <h7>watermelon juice<br>Rs.35</h7>
+          </div>
+        </div>
+        <div class = "subitems">
+          <div class="image">
+            <img src = "images/lemon juice.avif">
+          </div>
+          <div class="details1">
+            <h7>lemon juice<br>Rs.35</h7>
+          </div>
+        </div>
+      </div>  
+    </div>
+    </section>
   </body>
 </html>
