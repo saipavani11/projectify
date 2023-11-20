@@ -4,7 +4,7 @@
 
 
 html{
-    scroll-behavior: smooth;
+    
 }
 
 *{
@@ -16,6 +16,7 @@ html{
     font-family: 'Nunito', sans-serif;
     font-family: 'Poppins', sans-serif;
     color: black;
+    scroll-behavior: smooth;
 }
 
 nav{
@@ -108,11 +109,19 @@ input{
     border-radius: 60px;
 }
 
-.hover:hover, .hover.active{
+#menu-icon{
+    color:olivedrab;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hover:hover, nav div ul li a:active{
     border: 0.5px solid olivedrab;
     border-radius: 5px;
     padding:0;
     margin:0;
+    color :#88a44e;
 }
 
 .logo:hover, a.logoname:hover{
@@ -140,6 +149,36 @@ input{
     position: fixed;
     z-index: 100;
     width: 100%;
+}
+
+.dropdown{
+    position:absolute;
+    right:2rem;
+    top: 60px;
+    width:300px;
+    background:#e1e8d3;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height:0px;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* display: none; */
+}
+
+.dropdown.open{
+    height:240px;
+}
+
+.dropdown li{
+    padding:0.7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropitems :hover, .dropitems a:hover{
+    color:olivedrab;
+    transition: 0.5s;
 }
 
 body{
@@ -191,6 +230,7 @@ body{
     height:50vh;
     padding-left: 15vh;
     padding-right: 15vh;
+    margin: 10vh;
 }
 
 .menu-items{
@@ -453,7 +493,7 @@ section{
 }
 
 footer{
-    padding: 1vh 5vh 1vh 5vh;
+    /* padding: 1vh 3vh 1vh 3vh; */
     background:olivedrab;
 }
 
@@ -489,6 +529,7 @@ footer p{
     font:12px;
     text-align: center;
 }
+
     
 
 

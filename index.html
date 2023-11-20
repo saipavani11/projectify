@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -25,7 +26,7 @@
         <div class="nav-contents">
           <ul class="nav-items">
             <li class="hover">
-              <a href="#" class="nav-link" id="About Us">About Us</a>
+              <a href="#" class="nav-link" class = "active" id="About Us">About Us</a>
             </li>
             <li class="hover">
               <a href="#" class="nav-link" >Menu</a>
@@ -51,16 +52,38 @@
               <a href="#" class="nav-link" id="login">Login</a>
             </li>
           </ul>
+          <div class = "menuList">
+            <i class="material-icons" id = "menu-icon">menu</i>
+          </div>
         </div>
       </nav>
+      <div class="dropdown">
+        <li class="dropitems">
+          <a href="#" class="nav-link" class = "active" id="About Us">About Us</a>
+        </li>
+        <li class="dropitems">
+          <a href="#" class="nav-link" >Menu</a>
+        </li>
+        <li class="dropitems">
+          <a href="#" class="nav-link" >Help</a>
+        </li>
+        <li class="dropitems">
+          <a href="#"
+            >Cart<i class="material-icons md-12">shopping_cart</i></a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav-link" id="login" class = "login">Login</a>
+        </li>
+      </div>
     </header>
     
-    <section class="home" id="logo" class="page">
+    <section class="home" id="home" class="page">
       <p class="text" id="name">lara's restaurant</p>
       <p class="text" id="tag">Where every flavour tells a story.</p>
     </section>
 
-    <section class="container" class = "page">
+    <section class="container" id = "about-us" class = "page">
       <p class = "title">our story</p>
       <div> 
       <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam tortor, auctor non rhoncus non, vulputate sit amet sem. Nullam ornare eget nisi ac tempus. Vivamus iaculis nisi id nibh pharetra convallis. Ut hendrerit leo erat, sit amet tristique orci convallis vel. Integer pharetra tincidunt nisl nec tempus. Etiam non magna sollicitudin, blandit arcu sit amet, viverra elit. Cras tempus orci sit amet gravida malesuada. Phasellus eu lorem ut ligula porttitor aliquet sed eget ex. Phasellus auctor nec quam non interdum. Phasellus fringilla viverra lorem, non eleifend nulla pulvinar quis. Cras vel lobortis urna. Aenean tincidunt, nunc nec dignissim accumsan, libero odio auctor felis, eu placerat leo urna sit amet est. Quisque luctus ex id nisi condimentum accumsan ac vitae nisi. Phasellus mollis dui quis purus tincidunt, sit amet lacinia ligula placerat. Nulla venenatis condimentum dui eget sollicitudin.</p>
@@ -456,7 +479,7 @@
     </div>
     </section>
 
-    <section class="container" class = "page">
+    <section class="container" id = "help" class = "page">
       <p class = "title">help</p>
       <div class="help">
         <div class="info">
@@ -469,7 +492,7 @@
          </textarea>
           </div>
           <div >
-            <button class="button">submit</button>
+            <button class="button">Submit</button>
           </div>
         </div>
         <div class = "address" > 
