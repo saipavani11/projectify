@@ -33,6 +33,9 @@
     margin-top: 1.2vh;
     transition: 0.3s;
   }
+  .hidden {
+    display: none;
+  }
 }
 
 @media (max-width: 1640px) {
@@ -81,6 +84,9 @@
   .menu-list {
     height: 40vh;
     transition: 0.3s;
+  }
+  .hidden {
+    display: none;
   }
 }
 
@@ -142,6 +148,9 @@
   .help {
     margin: 3vh;
   }
+  .hidden {
+    display: none;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -149,6 +158,9 @@
     display: block;
   }
   .nav-items {
+    display: none;
+  }
+  .hidden {
     display: none;
   }
 }
@@ -227,8 +239,7 @@
   #non-vegs {
     display: block;
   }
-}
-
-.hidden {
-  display: none;
+  .hidden {
+    display: none;
+  }
 }
