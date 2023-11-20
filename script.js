@@ -1,18 +1,24 @@
 //for appetizers
 let Vegs = document.getElementById("vegs");
 let nonVegs = document.getElementById("non-vegs");
-nonVegs.style.display = "none";
-
+// nonVegs.style.display = "none";
+nonVegs.classList.add('hidden');
+console.log(nonVegs.classList);
 function displayVegs(event){
     var text = event.innerText || event.textContent;
     if(text == 'Go To Non-Veg'){
-        Vegs.style.display = "none";
-        nonVegs.style.display = "flex";
+        // Vegs.style.display = "none";
+        console.log('high')
+        Vegs.classList.add('hidden');
+        nonVegs.classList.remove('hidden')
+        // nonVegs.style.display = "flex";
         event.innerHTML = 'Go To Veg';
 
     }else{
-        Vegs.style.display = "flex";
-        nonVegs.style.display = "none";
+        Vegs.classList.remove('hidden');
+        nonVegs.classList.add('hidden')
+        // Vegs.style.display = "flex";
+        // nonVegs.style.display = "none";
         event.innerHTML = 'Go To Non-Veg';
     }
 }
