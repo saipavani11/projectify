@@ -3,12 +3,12 @@ let Vegs = document.getElementById("vegs");
 let nonVegs = document.getElementById("non-vegs");
 // nonVegs.style.display = "none";
 nonVegs.classList.add("hidden");
-console.log(nonVegs.classList);
+// console.log(nonVegs.classList);
 function displayVegs(event) {
   var text = event.innerText || event.textContent;
   if (text == "Go To Non-Veg") {
     // Vegs.style.display = "none";
-    console.log("high");
+    // console.log("high");
     Vegs.classList.add("hidden");
     nonVegs.classList.remove("hidden");
     // nonVegs.style.display = "flex";
@@ -26,17 +26,22 @@ function displayVegs(event) {
 
 let Veg = document.getElementById("veg");
 let nonVeg = document.getElementById("non-veg");
-nonVeg.style.display = "none";
+// nonVeg.style.display = "none";
+nonVeg.classList.add("hidden")
 
 function displayVeg(event) {
   var text = event.innerText || event.textContent;
   if (text == "Go To Non-Veg") {
-    Veg.style.display = "none";
-    nonVeg.style.display = "flex";
+    // Veg.style.display = "none";
+    // nonVeg.style.display = "flex";
+    Veg.classList.add("hidden");
+    nonVeg.classList.remove("hidden");
     event.innerHTML = "Go To Veg";
   } else {
-    Veg.style.display = "flex";
-    nonVeg.style.display = "none";
+    // Veg.style.display = "flex";
+    // nonVeg.style.display = "none";
+    Veg.classList.remove("hidden");
+    nonVeg.classList.add("hidden");
     event.innerHTML = "Go To Non-Veg";
   }
 }
