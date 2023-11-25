@@ -34,6 +34,9 @@
     margin-top: 1.2vh;
     transition: 0.3s;
   }
+  .hidden {
+    display: none;
+  }
 }
 
 @media (max-width: 1640px) {
@@ -82,6 +85,12 @@
   .menu-list {
     height: 40vh;
     transition: 0.3s;
+  }
+  .hidden {
+    display: none;
+  }
+  #message{
+    width:40vh;
   }
 }
 
@@ -143,6 +152,9 @@
   .help {
     margin: 3vh;
   }
+  .hidden {
+    display: none;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -153,8 +165,26 @@
     display: none;
   }
   .items{
-    display:block;
+    display: block;
   }
+  .help{
+    display: block;
+    margin:0vh 6vh;
+  }
+  .google-map{
+    width:400px;
+    height:350px;
+  }
+  .info{
+    margin:0vh 5vh;
+  }
+  .address{
+    margin:5vh;
+  }
+  #message, .info input{
+    width:30vh;
+  }
+  
 }
 
 @media (max-width: 750px) {
@@ -185,6 +215,7 @@
 
   .help {
     display: block;
+    margin: 0;
   }
   .title {
     padding: 4vh;
@@ -202,12 +233,12 @@
     font-size: 1.5vh;
   }
   .info input {
-    width: 30vh;
+    width: 25vh;
     height: 4vh;
   }
   #message {
     height: 8vh;
-    width: 30vh;
+    width: 25vh;
   }
   .info {
     margin-bottom: 3vh;
@@ -223,7 +254,7 @@
     height: 3vh;
   }
   footer p {
-    font: 1px;
+    font-size: 10px;
   }
   /* #vegs {
     display: block;
@@ -234,6 +265,42 @@
   .items.hidden {
     display: none;
   }
+  .items{
+    display: block;
+  }
+  .google-map{
+    width:300px;
+    height:200px;
+  }
 }
 
+/* .hidden {
+  display: none;
+} */
+
+@media (max-width: 400px){
+    .help{
+        margin: 0vh;
+    }
+    .info, .info-details, .address, #para{
+        font-size:1.5vh;
+    }
+    .google-map{
+        width:200px;
+        height:150px;
+    }
+    .footer, #logo a, .icons, .footer p, .material-icons.md-12,{
+        font-size: 10px;
+    }
+    .info{
+        margin:0px;
+    }
+    .info input{
+        width:fit-content;
+    }
+    #message{
+        width:10vh;
+    }
+
+}
 

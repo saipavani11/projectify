@@ -52,6 +52,9 @@
               <a href="#" class="nav-link" id="login">Login</a>
             </li>
           </ul>
+          <div class="searchIcon">
+            <a href="#"><input type="text" placeholder="Search Here" id="searchtab"/><i class="material-icons" id="seachicon">search</i></a>
+          </div>
           <div class = "menuList">
             <i class="material-icons" id = "menu-icon">menu</i>
           </div>
@@ -59,13 +62,13 @@
       </nav>
       <div class="dropdown">
         <li class="dropitems">
-          <a href="#" class="nav-link" class = "active" id="About Us">About Us</a>
+          <a href="#about-us" class="nav-link" class = "active" id="About Us">About Us</a>
         </li>
         <li class="dropitems">
-          <a href="#" class="nav-link" >Menu</a>
+          <a href="#Menu" class="nav-link" >Menu</a>
         </li>
         <li class="dropitems">
-          <a href="#" class="nav-link" >Help</a>
+          <a href="#help" class="nav-link" >Help</a>
         </li>
         <li class="dropitems">
           <a href="#"
@@ -166,7 +169,7 @@
               <img src = "images/springroll.jpg">
             </div>
             <div class="details1">
-              <h7>air frier frozen spring rolls<br>Rs.90</h7>
+              <h7>frozen spring rolls<br>Rs.90</h7>
             </div>
           </div>
           <div class = "subitems">
@@ -485,13 +488,13 @@
         <div class="info">
           <p class="infohead">get in touch</p>
           <div class="info-details">
-            <p>name<br><input type = "text" placeholder="please enter your name"></p>
-          <p>mobile number<br><input type = "text" placeholder="please enter your contact number"></p>
+            <p>name<br><input type = "text" placeholder="please enter your name" required></p>
+          <p>mobile number<br><input type = "text" placeholder="please enter your contact number" required></p>
           <p>your message<br>
-          <textarea rows = "5" cols = "60" placeholder="Enter details here..." id ="message">           
+          <textarea rows = "5" cols = "60" placeholder="Enter details here..." id ="message" required>           
          </textarea>
           </div>
-          <div >
+          <div id="button">
             <button class="button">Submit</button>
           </div>
         </div>
@@ -511,7 +514,7 @@
     <footer>
       <div>
         <div id="logo" >
-          <a href="#"><i class="material-icons">copyright</i>Lara's Restaurant</a>
+          <a href="#"><i class="material-icons md-12">copyright</i>Lara's Restaurant</a>
         </div>
         <div>
           <p>copyright<span><i class="material-icons md-12">copyright</i></span>2023 Lara's Restaurant, Inc.</p>

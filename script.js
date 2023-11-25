@@ -55,6 +55,10 @@ menulist.onclick = function () {
   const isOpen = dropdown.classList.contains("open");
 };
 
+let search = document.getElementById('searchicon');
+let searchTab = document.getElementById('searchtab');
+
+
 // let sections = document.querySelectorAll('section');
 // let navlinks = document.querySelectorAll('header nav div ul li a');
 
