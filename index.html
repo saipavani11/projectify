@@ -16,6 +16,7 @@
     <title>restaurant menu</title>
   </head>
   <body>
+    <!-- nav bar -->
     <header class="header">
       <nav class="header-nav" id="navbar">
         <div class="logo" >
@@ -35,7 +36,7 @@
               <a href="#help" class="nav-link" >Help</a>
             </li>
             <li>
-              <a href="#" class="nav-link"
+              <a href="#Menu" class="nav-link"
                 ><input
                   type="text"
                   placeholder="Search Here"
@@ -44,22 +45,24 @@
               >
             </li>
             <li class="hover">
-              <a href="#"
-                >Cart<i class="material-icons md-12">shopping_cart</i></a
+              <a id="Cart" href="#"
+                >Cart<i class="material-icons md-12">shopping_cart</i><span id = "notification"></span></a
               >
             </li>
             <li>
               <a href="#" class="nav-link" id="login">Login</a>
             </li>
           </ul>
+          <!-- search icon and menu icon  -->
           <div class="searchIcon">
-            <a href="#"><input type="text" placeholder="Search Here" id="searchtab"/><i class="material-icons" id="seachicon">search</i></a>
+            <a href="#Menu" class="nav-link"><input type="text" placeholder="Search Here" class = "tabsearch open"/><i class="material-icons" id="iconsearch" id="iconsearch" >search</i></a>
           </div>
           <div class = "menuList">
             <i class="material-icons" id = "menu-icon">menu</i>
           </div>
         </div>
       </nav>
+      <!-- dropdown part -->
       <div class="dropdown">
         <li class="dropitems">
           <a href="#about-us" class="nav-link" class = "active" id="About Us">About Us</a>
@@ -81,11 +84,13 @@
       </div>
     </header>
     
+    <!-- home section  -->
     <section class="home" id="home" class="page">
       <p class="text" id="name">lara's restaurant</p>
       <p class="text" id="tag">Where every flavour tells a story.</p>
     </section>
 
+    <!-- about us section  -->
     <section class="container" id = "about-us" class = "page">
       <p class = "title">our story</p>
       <div> 
@@ -101,37 +106,47 @@
       </div>
     </section>
 
+    <!-- menu section  -->
     <section class="container" id="Menu" class="page">
       <p class = "title">our categories</p>
       <div class="menu-list">
-        <div class="menu-items" id="appetizers">
-          <img src="images/appetizers.jpg" />
-          <div class="details">
-            <h7>Appetizers</h7>
+        <a href="#menu1">
+          <div class="menu-items" id="appetizers">
+            <img src="images/appetizers.jpg" />
+            <div class="details">
+              <h7>Appetizers</h7>
+            </div>
           </div>
-        </div>
-        <div class="menu-items" id="main">
-          <img src="images/main.jpg" />
-          <div class="details">
-            <h7>Main Course</h7>
+        </a>
+        <a href="#menu2">
+          <div class="menu-items" id="main">
+            <img src="images/main.jpg" />
+            <div class="details">
+              <h7>Main Course</h7>
+            </div>
           </div>
-        </div>
-        <div class="menu-items" id="desserts">
-          <img src="images/desserts.jpg" />
-          <div class="details">
-            <h7>Desserts</h7>
+        </a>
+        <a href="#menu3">  
+          <div class="menu-items" id="desserts">
+            <img src="images/desserts.jpg" />
+            <div class="details">
+              <h7>Desserts</h7>
+            </div>
           </div>
-        </div>
-        <div class="menu-items" id="beverages">
-          <img src="images/beverages.jpg" />
-          <div class="details">
-            <h7>Beverages</h7>
+        </a>
+        <a href="#menu4"> 
+          <div class="menu-items" id="beverages">
+            <img src="images/beverages.jpg" />
+            <div class="details">
+              <h7>Beverages</h7>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
-    <section class="container"  class="page">
+    <!-- appetisers section  -->
+    <section class="container" id="menu1" class="page" >
       <ul class="subtitle">
         <li><p class = "title"><a href="#">APPETIZERS</a></p></li>
         <li><p ><button class = "classification" onclick="displayVegs(this)">Go To Non-Veg</button></p></li>
@@ -145,6 +160,7 @@
             <div class="details1">
               <h7>french fries<br>Rs.80</h7>
             </div>
+            <i class="material-icons md-15" id = "addToCart">add</i>
           </div>
           <div class = "subitems">
             <div class="image">
@@ -153,6 +169,7 @@
             <div class="details1">
               <h7>gobi manchurian<br>Rs.80</h7>
             </div>
+            <i class="material-icons md-15" class="addToCart">add</i>
           </div>
           <div class = "subitems">
             <div class="image">
@@ -161,6 +178,7 @@
             <div class="details1">
               <h7>paneer tikka<br>Rs.95</h7>
             </div>
+            <i class="material-icons md-15" class="addToCart">add</i>
           </div>
         </div>
         <div class="align">
@@ -171,6 +189,7 @@
             <div class="details1">
               <h7>frozen spring rolls<br>Rs.90</h7>
             </div>
+            <i class="material-icons md-15" class="addToCart">add</i>
           </div>
           <div class = "subitems">
             <div class="image">
@@ -179,6 +198,7 @@
             <div class="details1">
               <h7>samosa<br>Rs.60</h7>
             </div>
+            <i class="material-icons md-15" class="addToCart">add</i>
           </div>
           <div class = "subitems">
             <div class="image">
@@ -187,6 +207,7 @@
             <div class="details1">
               <h7>paneer fingers<br>Rs.70</h7>
             </div>
+            <i class="material-icons md-15" class="addToCart">add</i>
           </div>
         </div>  
       </div>
@@ -199,6 +220,7 @@
             <div class="details1">
               <h7>chicken spring rolls<br>Rs.240</h7>
             </div>
+            <i class="material-icons md-15" class="addToCart">add</i>
           </div>
           <div class = "subitems">
             <div class="image">
@@ -207,6 +229,7 @@
             <div class="details1">
               <h7>chilli prawns<br>Rs.280</h7>
             </div>
+            <i class="material-icons md-15" class="addToCart">add</i>
           </div>
           <div class = "subitems">
             <div class="image">
@@ -215,6 +238,7 @@
             <div class="details1">
               <h7>vegetable<br>cheese omlet<br>Rs.120</h7>
             </div>
+            <i class="material-icons md-15" class="addToCart">add</i>
           </div>
         </div>
         <div class="align">
@@ -225,6 +249,7 @@
             <div class="details1">
               <h7>chicken soup<br>Rs.150</h7>
             </div>
+            <i class="material-icons md-15" class="addToCart">add</i>
           </div>
           <div class = "subitems">
             <div class="image">
@@ -233,6 +258,7 @@
             <div class="details1">
               <h7>kheema samosa<br>Rs.190</h7>
             </div>
+            <i class="material-icons md-15" class="addToCart">add</i>
           </div>
           <div class = "subitems">
             <div class="image">
@@ -241,13 +267,14 @@
             <div class="details1">
               <h7>chicken manchurian<br>Rs.260</h7>
             </div>
+            <i class="material-icons md-15" class="addToCart">add</i>
           </div>
         </div>  
       </div>
     </section>
     
-    
-    <section class="container"  class="page">
+    <!-- main course section  -->
+    <section class="container" id="menu2" class="page">
       <ul class="subtitle">
         <li><p class = "title"><a href="#">main course</a></p></li>
         <li><p ><button class = "classification" onclick="displayVeg(this)">Go To Non-Veg</button></p></li>
@@ -261,6 +288,7 @@
           <div class="details1">
             <h7>paneer biryani<br>Rs.256</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -269,6 +297,7 @@
           <div class="details1">
             <h7>mushroom biryani<br>Rs.230</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -277,6 +306,7 @@
           <div class="details1">
             <h7>rajma chawal<br>Rs.75</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
       </div>
       <div class="align">
@@ -287,6 +317,7 @@
           <div class="details1">
             <h7>masala dosa<br>Rs.50</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -295,6 +326,7 @@
           <div class="details1">
             <h7>palak paneer<br>Rs.120</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -303,6 +335,7 @@
           <div class="details1">
             <h7>veg pulao<br>Rs.70</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
       </div>  
     </div>
@@ -315,6 +348,7 @@
           <div class="details1">
             <h7>chicken biryani<br>Rs.280</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -323,6 +357,7 @@
           <div class="details1">
             <h7>tandoori chicken<br>Rs.210</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -331,6 +366,7 @@
           <div class="details1">
             <h7>mutton korma<br>Rs.240</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
       </div>
       <div class="align">
@@ -341,6 +377,7 @@
           <div class="details1">
             <h7>malabar fish biryani<br>Rs.270</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -349,6 +386,7 @@
           <div class="details1">
             <h7>goan prawn curry<br>Rs.285</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -357,12 +395,14 @@
           <div class="details1">
             <h7>butter chicken<br>Rs.170</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
       </div>  
     </div>
     </section>
 
-    <section class="container"  class="page">
+    <!-- dessets section  -->
+    <section class="container" id="menu3" class="page">
       <ul class="subtitle">
         <li><p class = "title"><a href="#" onclick="displayNormal()">desserts</a></p></li>
       </ul>   
@@ -375,6 +415,7 @@
           <div class="details1">
             <h7>chocolate mousse<br>Rs.120</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -383,6 +424,7 @@
           <div class="details1">
             <h7>tiramisu<br>Rs.120</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -391,6 +433,7 @@
           <div class="details1">
             <h7>blueberry cheesecake cup<br>Rs.120</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
       </div>
       <div class="align">
@@ -401,6 +444,7 @@
           <div class="details1">
             <h7>kitkat mousse<br>Rs.130</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -409,6 +453,7 @@
           <div class="details1">
             <h7>chocolate brownie<br>Rs.90</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -417,12 +462,14 @@
           <div class="details1">
             <h7>fruit tart<br>Rs.60</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
       </div>  
     </div>
     </section>
   
-    <section class="container"  class="page">
+    <!-- beeverages section  -->
+    <section class="container" id="menu4" class="page">
       <ul class="subtitle">
         <li><p class = "title"><a href="#" onclick="displayNormal()">beverages</a></p></li>
       </ul>   
@@ -435,6 +482,7 @@
           <div class="details1">
             <h7>butterscotch milkshake<br>Rs.60</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -443,6 +491,7 @@
           <div class="details1">
             <h7>chocolate strawberry milkshake<br>Rs.70</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -451,6 +500,7 @@
           <div class="details1">
             <h7>oreo milkshake<br>Rs.45</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
       </div>
       <div class="align">
@@ -461,6 +511,7 @@
           <div class="details1">
             <h7>banana milkshake<br>Rs.40</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -469,6 +520,7 @@
           <div class="details1">
             <h7>watermelon juice<br>Rs.35</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
         <div class = "subitems">
           <div class="image">
@@ -477,11 +529,13 @@
           <div class="details1">
             <h7>lemon juice<br>Rs.35</h7>
           </div>
+          <i class="material-icons md-15" class="addToCart">add</i>
         </div>
       </div>  
     </div>
     </section>
 
+    <!-- help section  -->
     <section class="container" id = "help" class = "page">
       <p class = "title">help</p>
       <div class="help">
@@ -511,6 +565,7 @@
       
     </section>
 
+    <!-- footer section  -->
     <footer>
       <div>
         <div id="logo" >
@@ -528,6 +583,12 @@
       </div>
       
     </footer>
+
+    <!-- <div class="bd-modal">
+      <div class="carttab">
+        <h1>cart</h1>
+      </div>
+    </div> -->
     
   </body>
 </html>

@@ -19,6 +19,8 @@ html{
     transition: 0.2s;
 }
 
+
+/* nav section  */
 nav{
     display: flex; 
     padding:20px;
@@ -49,6 +51,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     font-size: 17px;
+    height: 46;
 }
 
 .nav-items a{
@@ -108,6 +111,7 @@ input{
     border-radius: 60px;
 }
 
+
 #menu-icon{
     color:olivedrab;
     font-size: 30px;
@@ -115,11 +119,20 @@ input{
     display: none;
 }
 
+#cart span{
+    background:olivedrab;
+    width:1vh;
+    height:1vh;
+    border-radius: 100%;
+    top:10px;
+    right:80%;
+}
+
 .hover:hover, nav div ul li a:active{
-    border: 0.5px solid olivedrab;
+    /* border:solid olivedrab; */
+    border-width: 0.2px;
+    padding: 0px;
     border-radius: 5px;
-    padding:0;
-    margin:0;
     color :#88a44e;
 }
 
@@ -150,6 +163,7 @@ input{
     width: 100%;
 }
 
+/* dropdown section  */
 .dropdown{
     position:fixed;
     right:2rem;
@@ -182,18 +196,37 @@ input{
     transition: 0.5s;
 }
 
-.searchIcon input{
-    display:none;
+.searchIcon a{
+    display: flex;
 }
 
 .searchIcon i{
-    color:olivedrab;
+    display:none;
 }
+
+.searchIcon i, .searchIcon input{
+    color:olivedrab;
+} 
 
 .nav-contents div{
-    padding:0vh 2vh;
+    padding:0vh 1vh;
+}
+.tabsearch{
+    /* display:none; */
+    width:0px;
+    border:none;
+    padding:0;
 }
 
+.tabsearch.open{
+    width:250px;
+    display: flex;
+    border:2px solid #fff;
+    border-radius: 60px;
+    padding:5px 10px;
+}
+
+/* body  */
 body{
     background-color: #e1e8d3;
 }
@@ -201,6 +234,13 @@ body{
 .page{
     display:block;
 }
+
+section{
+    height:100vh;
+    padding-top:10vh;
+}
+
+/* home section  */
 .home{
     background: url(../images/home.jpg);
     background-repeat: no-repeat;
@@ -233,7 +273,31 @@ body{
     text-shadow: 2px 2px 5px black;
 }
 
+/* about us section  */
+.para{
+    text-align: center;
+    margin:1vh 13vh 8vh 13vh;
+}
 
+.about{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.laras{
+    width:450px;
+    height:300px;    
+}
+
+.laras img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+/* menu section  */
 .menu-list{
     display: flex;
     /* position: relative; */
@@ -279,7 +343,6 @@ body{
     /* background:#a6bb7b; */
     border-radius: 3vh;
     box-shadow: 0px 0px 10px #a6bb7b;;
-    
     cursor:pointer;
     color:#fff;
     font-weight: 300;
@@ -299,10 +362,7 @@ body{
     
 }
 
-section{
-    height:100vh;
-}
-
+/* menu items section  */
 .container{
     /* height: 88vh; */
     background-color: #e1e8d3;
@@ -324,8 +384,7 @@ section{
     margin:3vh;
 }
 
-
-/* change to display:black; */
+/* change to display:block; */
 .align{
     display:block;
 }
@@ -363,7 +422,6 @@ section{
     /* overflow-wrap: normal; */
     width: 40vh;
     border-bottom: 1px dotted olivedrab;
-
 }
 
 .subitems:hover{
@@ -372,6 +430,7 @@ section{
     cursor:pointer;
 }
 
+/* veg non veg buttons */
 .classification{
     background:#88a44e;
     color:#fff;
@@ -383,7 +442,6 @@ section{
     font-size: 2vh;
 }
 
-
 .classification:hover{
     background:#e1e8d3;
     color:#88a44e;
@@ -393,29 +451,7 @@ section{
     cursor:pointer;
 }
 
-.para{
-    text-align: center;
-    margin:1vh 13vh 8vh 13vh;
-}
-
-.about{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
-.laras{
-    width:450px;
-    height:300px;    
-}
-
-.laras img{
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-}
-
+/* help section  */
 .help{
     display:flex;
     justify-content: space-evenly;
@@ -459,7 +495,6 @@ section{
     overflow: hidden;
     background:#e1e8d3;
     border-radius: 1vh;
-
 }
 
 .infohead{
@@ -529,6 +564,7 @@ section{
     position: absolute;
 }
 
+/* footer section  */
 footer{
     /* padding: 1vh 3vh 1vh 3vh; */
     background:olivedrab;
@@ -570,4 +606,46 @@ footer p{
     display: none;
 }
 
+/* #Cart{
+    height: 18;
+} */
+/* add to cart */
 
+.subitems i{
+    color:#edede9;
+    text-shadow:1px 1px 3px olivedrab;
+    height:5vh;
+    width:5vh;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+}
+
+.subitems i:hover{
+    color:#88a44e;
+    background:#edede9;
+    box-shadow: 1px 1px 3px olivedrab;
+    border-radius: 2vh;
+}
+
+.material-icons.md-15 {
+    font-size : 4vh;
+}
+
+.bg-modal{
+    width:100%;
+    height:100%;
+    background-color: rgba(0 0 0 0.7);
+    opacity:0.7%;
+    position:absolute;
+    top:0px;
+}
+
+/* .carttab{
+    background:olivedrab;
+    width:300px;
+    height:250px;
+    position: relative;
+    top:100px;
+
+} */

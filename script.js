@@ -27,6 +27,7 @@ function displayVegs(event) {
 let Veg = document.getElementById("veg");
 let nonVeg = document.getElementById("non-veg");
 // nonVeg.style.display = "none";
+
 nonVeg.classList.add("hidden")
 
 function displayVeg(event) {
@@ -55,8 +56,48 @@ menulist.onclick = function () {
   const isOpen = dropdown.classList.contains("open");
 };
 
-let search = document.getElementById('searchicon');
-let searchTab = document.getElementById('searchtab');
+let searchi = document.getElementById("iconsearch");
+let input = document.querySelector(".tabsearch");
+input.classList.remove("open");
+
+searchi.addEventListener('click', () => {
+    if(input.classList.contains("open")){
+        input.classList.remove("open");
+        // searchi.innerHTML = "<i class="material-icons md-12">cancel</i>";
+        console.log('print')
+    }
+    else{
+        input.classList.add("open")
+        // searchi.innerHTML = "<i class="material-icons md-12">cancel</i>"; 
+    }
+});
+
+//responsive cart
+
+// let cart = document.getElementById("Cart");
+
+// cart.addEventListener('click',() => {
+//     window.open('cart.html','_blank')
+// })
+
+// let logo = document.getElementById("goHome");
+
+// logo.addEventListener('click',() => {
+//     window.open('index.html','_blank');
+// });
+
+let notif = document.getElementById("notification");
+let tocart = document.getElementById("addToCart");
+
+notif.style.display = "none";
+
+tocart.addEventListener('click',() => {
+    console.log('print')
+})
+
+    
+
+
 
 
 // let sections = document.querySelectorAll('section');
