@@ -369,6 +369,10 @@ section{
     border-bottom: 1px solid olivedrab;
 }
 
+/* #position{
+    position: fixed;
+} */
+
 .subtitle{
     display: flex;
     align-items: center;
